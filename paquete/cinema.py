@@ -1,5 +1,5 @@
-from regularticket import RegularTicket
-from vipticket import VIPTicket
+from paquete.regularticket import RegularTicket
+from paquete.vipticket import VIPTicket
 class Cinema:
     """
     Clase del teatro que corre las peliculas

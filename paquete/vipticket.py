@@ -1,4 +1,4 @@
-from aticket import ATicket
+from paquete.aticket import ATicket
 
 class VIPTicket(ATicket):
     def __init__(self, movie:str, cuando:int, donde:str) -> None:
@@ -6,3 +6,24 @@ class VIPTicket(ATicket):
         self.movie = movie
         self.cuando = cuando
         self.donde = donde 
+
+
+    @property
+    def movie(self):
+        print("Getting value...")
+        return self._movie
+
+    @movie.setter
+    def movie(self, value):
+        print("Setting value...")
+        self._movie = value
+
+    @property
+    def cuando(self):
+        print("Getting value...")
+        return self._movie
+
+    @cuando.setter
+    def cuando(self, value):
+        print("Setting value...")
+        self._cuando = value
