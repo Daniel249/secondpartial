@@ -1,5 +1,6 @@
 from paquete.regularticket import RegularTicket
 from paquete.vipticket import VIPTicket
+from typing import Optional, Iterable, Iterator, cast
 class Cinema:
     """
     Clase del teatro que corre las peliculas

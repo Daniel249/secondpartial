@@ -1,5 +1,5 @@
 from paquete.aticket import ATicket
-
+from typing import Optional, Iterable, Iterator, cast
 class VIPTicket(ATicket):
     def __init__(self, movie:str, cuando:int, donde:str) -> None:
         super().__init__()
