@@ -1,0 +1,27 @@
+@startuml
+abstract class ATicket {
+
+}
+
+class VIPTicket {
+movie:str
+cuando:int
+donde:str
+}
+
+class RegularTicket {
+movie:str
+cuando:int
+donde:str
+}
+
+class Cinema {
+normalseats: int
+vipseats: int
+}
+
+ATicket <|-- VIPTicket
+ATicket <|-- RegularTicket
+RegularTicket *-- Cinema
+VIPTicket *-- Cinema
+@enduml

@@ -8,6 +8,7 @@ class Cinema:
         self.normalseats = seats
         self.vipseats = vipseats
         self.cuentas = []
+        self.tickets = []
 
     def buyTicket(self) -> None:
         """
@@ -53,9 +54,11 @@ class Cinema:
         for i in range(cuanto):
             if vip == "si":
                 ticket = VIPTicket(cual, cuando, donde)
+                self.tickets.append(ticket)
                 self.vipseats -= 1
             else:
                 ticket = RegularTicket(cual, cuando, donde)
+                self.tickets.append(ticket)
                 self.normalseats -= 1
 
     def crearCuenta(self, pref, nombre) -> None:
